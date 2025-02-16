@@ -1,0 +1,167 @@
+.profile-container {
+  width: 1500px;
+  margin: auto;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.upper-block {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.left-block {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  
+
+
+  .profile-block {
+    width: 340px;
+    height: 400px;
+    padding: 30px;
+    background-color: #fefaf0;
+    display: flex;
+    flex-direction: column;
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      margin: auto;
+      border: 1px solid #ff8159;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+
+      > img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+      }
+    }
+    > label {
+      margin: 5px auto;
+      background-color: #ffc2b0;
+      padding: 5px 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      color: #e53737;
+    }
+    > input {
+      display: none;
+    }
+
+    > h2 {
+      margin: 10px auto;
+      margin-bottom: 30px;
+    }
+
+    > h3 {
+      margin: 0px auto;
+      margin-bottom: 30px;
+    }
+
+    > p {
+      color: #494444;
+    }
+    > h4 {
+      margin: 10px 0;
+    }
+
+    > .btn {
+      margin-top: 10px;
+    }
+  }
+}
+
+.right-block {
+  width: 1000px;
+  height: 1000px;
+  padding: 30px;
+  background-color: #fefaf0;
+
+  > .services-header {
+    margin-bottom: 20px;
+    padding-left: 10px;
+
+    button {
+      padding: 12px 20px;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 160px;
+    }
+  }
+
+  > .header {
+    display: flex;
+    margin-top: 10px;
+    padding-left: 10px;
+
+    span {
+      font-size: 16px;
+      padding: 15px 20px;
+      cursor: pointer;
+      font-weight: 600;
+      color: #494444;
+    }
+
+    >.span{
+      background-color: #ffc2b06c;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      
+     
+    }
+  }
+
+
+
+  .services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+   
+
+    > .service {
+      width: 300px;
+      padding: 10px;
+
+      >.service-head{
+        display: flex;
+        justify-content: space-between;
+
+        >.icons{
+          display: flex;
+          justify-content: center;
+          gap: 10px;
+        }
+
+      }
+      
+      > img {
+        width: 300px;
+        height: 300px;
+      }
+    }
+  }
+}
+
+.lower-block {
+  > h4 {
+    text-align: center;
+    color: gray;
+  }
+}

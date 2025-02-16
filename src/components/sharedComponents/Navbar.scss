@@ -1,0 +1,163 @@
+$tertiary : #0C1524;
+$seconday :#494444;
+$primary : #FEFAF0;
+$textColor : #E53737;
+$TextBg : #FFC2B0;
+$buttonBg: #FF8159;
+$spanBg : #242C3A;
+
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: $primary;
+  color: #0C1524;
+  z-index: 2;
+
+
+  height: 60px;
+  align-items: center;
+
+
+  >.logo{
+    >img{
+      padding-left: 100px;
+    }
+  }
+
+  > ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 30px;
+
+    > li {
+      display: flex;
+      margin-right: 20px;
+      > a {
+        color: #0C1524;
+        text-decoration: none;
+      }
+    }
+  }
+
+  > .menubar {
+    display: none;
+    align-items: center;
+    z-index: 1;
+    padding-left: 30px;
+    font-size: 22px;
+
+    > ul {
+      position: fixed;
+      left: 0;
+      top: 50px;
+      background-color:  #0C1524;
+      width: 200px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      padding-top: 20px;
+     
+
+      > li {
+        list-style-type: none;
+        cursor: pointer;
+        padding: 10px;
+        padding-left: 30px;
+        display: flex;
+        align-items:baseline;
+        color: #E53737;
+        font-size: 16px;
+        font-style: italic;
+        
+        > span {
+          color: #FEFAF0;
+
+          > a {
+            color: white;
+            text-decoration: none;
+            font-size: small;
+            padding-left: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  > .userprofile {
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+
+    > p {
+      font-style: italic;
+
+      > button {
+        border: none;
+      }
+    }
+
+    > .dropdown {
+      display: flex;
+      margin-left: 20px;
+
+      > ul {
+        position: absolute;
+        top: 40px;
+        right: 0;
+        width: 200px;
+        background-color: $tertiary;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        padding-top: 30px;
+        list-style-type: none;
+
+        > li {
+          padding: 5px 20px;
+          cursor: pointer;
+          color: #FEFAF0;
+
+          &:hover{
+            background-color: #FF8159;
+          }
+         
+
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbar {
+
+
+    >.logo{
+      >img{
+        padding-left: 5px ;
+      }
+    }
+    > ul {
+      display: none;
+    }
+
+    > .menubar {
+      display: flex;
+    }
+
+    > .userprofile {
+
+      >p{
+        display: none;
+      }
+      > .dropdown {
+        display: none;
+      }
+    }
+  }
+}
